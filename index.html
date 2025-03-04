@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Carnaval de 2025</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <main>
+        <header class="cabecalho">
+            <img src="img/Logo-Carnaval-Horizontal.png" alt="logo do Carnaval">
+
+            <nav class="nav" aria-label="Paginação  principal">
+                <a href="#">HOME</a>
+
+                <a href="#">BLOCOS</a>
+            </nav>
+        </header>
+
+
+        <form class="form-content">
+
+            <fieldset class="form-filters">
+                <div class="content-search">
+                    <div class="input">
+                        <input type="text" placeholder="Digite o que  você  procura" id="search" name="search">
+                        <span>
+                            <img src="img/search.png" alt="search">
+                        </span>
+                    </div>
+
+                    <select name="" id="city">
+                        <option value="" disabled selected>Selecione uma cidade</option>
+                        <option value="sao-paulo">São Paulo</option>
+                        <option value="rio-de-janeiro">Rio de Janeiro</option>
+                        <option value="belo-horizonte">Belo Horizonte</option>
+                        <option value="salvador">Salvador</option>
+                        <option value="recife-olinda">Recife e Olinda</option>
+                        <option value="brasilia">Brasília</option>
+                        <option value="fortaleza">Fortaleza</option>
+                        <option value="porto-alegre">Porto Alegre</option>
+                    </select>
+                </div>
+
+
+                <div class="filters-grup">
+                    <select name="" id="date">
+                        <option value="" disabled selected>Escolha data</option>
+                        <option value="2025-02-28">Sexta-feira, 28 de fevereiro</option>
+                        <option value="2025-03-01">Sábado, 1º de março</option>
+                        <option value="2025-03-02">Domingo, 2 de março</option>
+                        <option value="2025-03-03">Segunda-feira, 3 de março</option>
+                        <option value="2025-03-04">Terça-feira de Carnaval, 4 de março</option>
+                        <option value="2025-03-05">Quarta-feira de Cinzas, 5 de março</option>
+                    </select>
+
+                    <select name="" id="ordem">
+                        <option value="" disabled selected>Ordena os resultados</option>
+                        <option value="asc">(mais antigos primeiro)</option>
+                        <option value="desc">(mais recentes primeiro)</option>
+                    </select>
+                </div>
+
+            </fieldset>
+
+
+        </form>
+
+
+        <section class="content-section">
+            <div class="pagination">
+                <p>Foram encontrado 10 bloco(s) em 1 página(s)</p>
+
+
+                <nav aria-label="Paginação">
+                    <button id="prevPage">< prevPage</button>
+                    <span id="pageNumber"> 1</span>
+                    <button id="nextPage">nextPage ></button>
+                </nav>
+
+            </div>
+
+
+            <aside class="content-result" >
+               <a href="">
+                <article class="card">
+                    <h2>'Vai Tomar No Azul</h2>
+                    <div>
+                        <p>Rua General Jardim, 485</p>
+                        <span>Grátis</span>
+                    </div>
+                </article>
+               </a>
+
+                <a href="">
+                    <article class="card">
+                        <h2>Bloco do Caramuela</h2>
+                        <div>
+                            <p>Rua General Jardim, 485</p>
+                            <span>Grátis</span>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="">
+                    <article class="card">
+                        <h2>9º Ensaio da Bateria Emilias e Viscondes9º Ensaio da Bateria Emilias e Viscondes</h2>
+                        <div>
+                            <p>Rua General Jardim, 485</p>
+                            <span>Grátis</span>
+                        </div>
+                    </article>
+                </a>
+
+                <article class="card">
+                    <h2>Te Vejo Por dentro... Sou da Radiologia</h2>
+                    <div>
+                        <p>Rua General Jardim, 485</p>
+                        <span>Grátis</span>
+                    </div>
+                </article>
+                <article class="card">
+                    <h2>Bloco dos Ferroviários Aposentados</h2>
+                    <div>
+                        <p>Rua General Jardim, 485</p>
+                        <span>Grátis</span>
+                    </div>
+                </article>
+            </aside>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
