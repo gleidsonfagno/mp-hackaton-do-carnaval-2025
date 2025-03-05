@@ -16,13 +16,13 @@ export  function Navbar() {
         aria-label="Paginação  principal"
       >
         <Link
-          href="#"
+          href="/"
           className="px-8 py-2 border-l border-r border-black text-orange-600 text-lg font-bold font-poppins"
         >
           HOME
         </Link>
           <Link
-            href="#"
+            href="/bloco"
             className="px-8 py-2 border-l border-r border-black text-orange-600 text-lg font-bold font-poppins"
           >BLOCOS</Link>
       </nav>

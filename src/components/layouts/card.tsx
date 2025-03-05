@@ -1,13 +1,21 @@
 import Link from "next/link";
 
-export function Card() {
+
+export interface CardProps {
+  id: number
+  title: string
+  address: string
+  price: string
+}
+
+export function Card({id, title, address, price}: CardProps) {
   return (
-    <Link href="" className="flex flex-col bg-[#F95A00] text-amber-50 max-w-96"  >
+    <Link href={`/bloco/${id}`} className="flex flex-col bg-[#F95A00] text-amber-50 max-w-96"  >
       <article className="p-2.5  gap-2.5">
-        <h2 className="text-[16px]">Bloco do Caramuela</h2>
+        <h2 className="text-[16px]">{title}</h2>
         <div  className="flex flex-row justify-between  gap-3" >
-          <p className="text-[12px]">Rua General Jardim, 485</p>
-          <span className="text-[12px]" >Grátis</span>
+          <p className="text-[12px]">{address}</p>
+          <span className="text-[12px]" >{price}</span>
         </div>
       </article>
     </Link>
