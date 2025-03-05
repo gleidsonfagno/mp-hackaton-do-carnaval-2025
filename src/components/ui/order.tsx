@@ -1,7 +1,7 @@
 
 export function Order() {
   return(
-    <select name="" id="order"  className="p-2.5  border border-[#666666] text-[#666666] ">
+    <select name="" id="order"  className="p-2.5  border border-[#666666] text-[#666666] w-fit ">
     <option value="" disabled >
       Ordena os resultados
     </option>

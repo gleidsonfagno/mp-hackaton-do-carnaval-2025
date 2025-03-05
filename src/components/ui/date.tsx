@@ -1,6 +1,6 @@
 export function Date() {
     return(
-        <select name="" id="date" className="p-2.5  border border-[#666666] text-[#666666] outline-none ">
+        <select name="" id="date" className="p-2.5  border border-[#666666] text-[#666666] outline-none w-fit max-sm:w-[90%] ">
         <option value="" disabled >Escolha data</option>
         <option value="2025-02-28">Sexta-feira, 28 de fevereiro</option>
         <option value="2025-03-01">Sábado, 1º de março</option>

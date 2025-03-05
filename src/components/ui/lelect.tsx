@@ -1,12 +1,12 @@
 // "use client";
 
-export function Select() {
+export function City() {
   return (
     <select
       name="city"
       id="city"
       
-      className="p-2.5  border border-[#666666] text-[#666666] "
+      className="p-2.5  border border-[#666666] text-[#666666] w-fit"
     >
       <option value="" disabled>
         Selecione uma cidade

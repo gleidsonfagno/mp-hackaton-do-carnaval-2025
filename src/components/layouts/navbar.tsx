@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Navbar() {
+export  function Navbar() {
   return (
     <header className="flex flex-col items-center justify-center gap-8 mb-20">
       <Image
@@ -26,6 +26,7 @@ export default function Navbar() {
             className="px-8 py-2 border-l border-r border-black text-orange-600 text-lg font-bold font-poppins"
           >BLOCOS</Link>
       </nav>
+      
     </header>
   );
 }
