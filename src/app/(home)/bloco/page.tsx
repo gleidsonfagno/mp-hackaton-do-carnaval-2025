@@ -1,14 +1,8 @@
 
 import Image from "next/image";
 
-export default async function Bloco({
-    params: { id },
-}: {
-    params: { id: string}
-}) {
-    // const 
+export default  function Bloco() {
 
-    console.log(id)
   return (
     <>
       <section>
