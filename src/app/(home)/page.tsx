@@ -10,7 +10,9 @@ export default  async function Home() {
   const response =  await axios.get("https://apis.codante.io/api/bloquinhos2025/agenda/")
 
   const agendas = response.data.data
-  console.log(agendas)
+  const blocos = response.data.meta
+  // console.log(agendas)
+  // console.log(blocos)
   
   return (
     <>
@@ -19,7 +21,7 @@ export default  async function Home() {
       <section>
         <div className="flex flex-row justify-between items-center mb-8">
           <p className=" text-2 max-sm:text-[12px]">
-            Foram encontrado 10 bloco(s) em 1 página(s)
+            Foram encontrado  {blocos.to} bloco(s) em {blocos.current_page}  página(s) de um total de {blocos.total}
           </p>
 
           <nav className="flex flex-row gap-2 items-center ">

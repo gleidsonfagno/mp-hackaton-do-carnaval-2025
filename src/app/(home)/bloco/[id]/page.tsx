@@ -2,17 +2,13 @@
 // "user client"
 import Link from "next/link";
 
-export default async function Details({
-  params: {id}
-}: {
-  params: { id: string }
-}) {
+export default async function Details() {
 
 
 
   return (
     <div>
-        <p>paramentros {id} </p>
+        <p>paramentros  </p>
       <Link rel="stylesheet" href="/">
         voltar
       </Link>
