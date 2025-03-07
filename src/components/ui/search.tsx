@@ -1,15 +1,16 @@
 
 import Image from "next/image";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 
 export function SearchIput() {
+  const searchParams = useSearchParams()
   const pathname = usePathname()
   const {replace}  = useRouter()
   // DO evendo o que digitado estamos pegando a valor toda vez que e digitado alguma coisa
   function handleChange(event: React.ChangeEvent<HTMLInputElement>) {
     // a api que do navegador que pega o parametro
-    const params = new URLSearchParams
+    const params = new URLSearchParams(searchParams)
 
     const searchString = event.currentTarget.value
     // essa parte vaz a verficaçao se tem alguma coisa no input se tiver ele seta na url se nao tiver nada ele lipra a url
@@ -20,6 +21,7 @@ export function SearchIput() {
       params.delete("search")
     }
 
+    // vai  setar uma nova novo parametro na url 
     replace(`${pathname}?${params.toString()}`)
     
     // console.log(event.currentTarget
@@ -27,7 +29,6 @@ export function SearchIput() {
       
     //   console.log(params)
 
-      // vai  setar uma nova novo parametro na url 
   }
   return (
     <div className="flex flex-row w-full max-w-lg border border-[#666666] text-[#666666]">
