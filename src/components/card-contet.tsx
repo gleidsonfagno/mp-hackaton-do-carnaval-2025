@@ -13,8 +13,8 @@ export function CardContent({ agendas }: AgendaProps) {
           key={agenda.id}
           id={agenda.id}
           title={agenda.title}
-          address={agenda.address}
-          price={agenda.price}
+          city={agenda.city}
+          price={agenda.price === "" ? "Grátis" : agenda.price}
         />
       ))}
     </div>

@@ -1,3 +1,5 @@
+"use client"
+
 export function Date() {
     return(
         <select name="" id="date" className="p-2.5  border border-[#666666] text-[#666666] outline-none w-fit max-sm:w-[90%] ">

@@ -6,14 +6,26 @@ import axios from "axios";
 import Image from "next/image";
 
 
-export default  async function Home() {
-  const response =  await axios.get("https://apis.codante.io/api/bloquinhos2025/agenda/")
+export default async function Home({
+  searchParams,
+}: {
+  searchParams : {search?: string}
+}) {
+  const response = await axios.get("https://apis.codante.io/api/bloquinhos2025/agenda/", {
+    params: {
+      search: searchParams?.search,
+
+    }
+  });
+  // https://apis.codante.io/api/bloquinhos2025/agenda?search=Zumbi
+  
+  // console.log(searchParams)
 
   const agendas = response.data.data
   const blocos = response.data.meta
   // console.log(agendas)
   // console.log(blocos)
-  
+
   return (
     <>
       <Form />
@@ -45,11 +57,11 @@ export default  async function Home() {
           </nav>
         </div>
 
-        <CardContent 
-        agendas={agendas}
+        <CardContent
+          agendas={agendas}
         />
 
-       
+
       </section>
     </>
   );
