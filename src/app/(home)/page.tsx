@@ -5,12 +5,12 @@ import axios from "axios";
 // import { Card } from "@/components/layouts/card";
 
 import Image from "next/image";
-
-type ComponentPrps = {
-  searchParams?: { city?: string; search?: string };
+// o searchParms e do tipo Promise
+type ComponentProps = {
+  searchParams?: Promise<{ city?: string; search?: string }>;
 };
 
-export default async function Home({ searchParams }: ComponentPrps) {
+export default async function Home({ searchParams }: ComponentProps) {
   //  os objetos searchParams e params são Promises que precisam ser aguardadas antes de acessar suas propriedades
   const resolvedSearchParams  =  await searchParams
 
@@ -18,7 +18,7 @@ export default async function Home({ searchParams }: ComponentPrps) {
     "https://apis.codante.io/api/bloquinhos2025/agenda/",
     {
       params: {
-        city: resolvedSearchParams?.city, //?city=Brasília
+        city: resolvedSearchParams?.city, //?city=Brasilia
         search: resolvedSearchParams?.search, //?search=Zumbi
       },
     }

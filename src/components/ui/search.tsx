@@ -37,6 +37,9 @@ export function SearchIput() {
         type="text"
         placeholder="Digite o que  você  procura"
         onChange={handleChange}
+
+        // spellcheck="false"
+        data-ms-editor="true"
       />
 
       <span className="flex items-center">
