@@ -13,7 +13,7 @@ export function City() {
   // Pegando a cidade da URL para deixar  o  valor lecionado nao mudar mesmo com reload
   const selectedCity = searchParams.get("city") || "";
 
-  function handleChangeFillter(event: React.ChangeEvent<HTMLSelectElement>)  {
+  function handleChangeFillterCity(event: React.ChangeEvent<HTMLSelectElement>)  {
     const params = new URLSearchParams(searchParams)
 
     const selectCity = event.currentTarget.value
@@ -30,7 +30,7 @@ export function City() {
   return (
     <select
       className="p-2.5  border border-[#666666] text-[#666666] w-fit"
-      onChange={handleChangeFillter}
+      onChange={handleChangeFillterCity}
       value={selectedCity}
     >
       <option value="" disabled>

@@ -1,4 +1,3 @@
-
 import { CardContent } from "@/components/card-contet";
 import { Form } from "@/components/form";
 import axios from "axios";
@@ -7,12 +6,12 @@ import axios from "axios";
 import Image from "next/image";
 // o searchParms e do tipo Promise
 type ComponentProps = {
-  searchParams?: Promise<{ city?: string; search?: string }>;
+  searchParams?: Promise<{ city?: string; search?: string; date?: string }>;
 };
 
 export default async function Home({ searchParams }: ComponentProps) {
   //  os objetos searchParams e params são Promises que precisam ser aguardadas antes de acessar suas propriedades
-  const resolvedSearchParams  =  await searchParams
+  const resolvedSearchParams = await searchParams;
 
   const response = await axios.get(
     "https://apis.codante.io/api/bloquinhos2025/agenda/",
@@ -20,6 +19,7 @@ export default async function Home({ searchParams }: ComponentProps) {
       params: {
         city: resolvedSearchParams?.city, //?city=Brasilia
         search: resolvedSearchParams?.search, //?search=Zumbi
+        date: resolvedSearchParams?.date,
       },
     }
   );
@@ -31,6 +31,8 @@ export default async function Home({ searchParams }: ComponentProps) {
   const blocos = response.data.meta;
   // console.log(agendas)
   // console.log(blocos)
+
+
 
   return (
     <>

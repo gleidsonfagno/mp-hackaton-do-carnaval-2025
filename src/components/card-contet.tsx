@@ -14,6 +14,7 @@ export function CardContent({ agendas }: AgendaProps) {
           id={agenda.id}
           title={agenda.title}
           city={agenda.city}
+          date_time={agenda.date_time}
           price={agenda.price === "" ? "Grátis" : agenda.price}
         />
       ))}
