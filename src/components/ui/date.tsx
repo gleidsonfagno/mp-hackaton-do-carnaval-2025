@@ -20,7 +20,7 @@ export function Date() {
         }
 
 
-        replace(`${pathname}?${params.toString()}`)
+        replace(`${pathname}?${params.toString()}`, { scroll: false } )
 
 
     }

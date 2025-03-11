@@ -10,3 +10,13 @@ export type Agendas = {
     price: string,
     event_url: string,
 }
+
+export type PaginationProps  = {
+   links: {
+    url: string;
+    label: string;
+    active: boolean;
+    id: string;
+   }[]
+   lastPage: number;
+}

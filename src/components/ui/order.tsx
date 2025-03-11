@@ -21,7 +21,7 @@ export function Order()
     }
 
     // essa vaiser a prametroo para a busca /?sort/asc ex
-    replace(`${pathname}?${params.toString()}`)
+    replace(`${pathname}?${params.toString()}`, { scroll: false })
 
    }
 

@@ -1,7 +1,7 @@
 "use client"
 
 import { Date } from "./ui/date";
-import { City } from "./ui/lelect";
+import { City } from "./ui/city";
 import { Order } from "./ui/order";
 import { SearchIput } from "./ui/search";
 
