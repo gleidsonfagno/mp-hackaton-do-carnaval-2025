@@ -1,7 +1,7 @@
 export type Agendas = {
     id: number,
     title: string,
-    descriptin: string
+    description: string
     date_time: Date,
     address: string,
     complete_address: string,

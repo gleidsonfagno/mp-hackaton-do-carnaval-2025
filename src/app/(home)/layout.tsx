@@ -6,9 +6,9 @@ export default function BlogLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main className=" max-w-[913px] m-auto p-4">
+    <main className=" max-w-[1300px] m-auto p-4 ">
       <Navbar />
-      <section>{children}</section>
+      <section >{children}</section>
     </main>
   );
 }

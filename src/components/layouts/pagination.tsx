@@ -28,7 +28,7 @@ export function Pagination({ links, lastPage }: PaginationProps) {
   }
 
   return (
-    <nav className="flex flex-row gap-2 items-center justify-center mt-7">
+    <nav className="flex flex-row gap-2 items-center justify-center ">
       
       <button 
       // se tiver na pagina 1 na pode ir para pagina 0 curso fica nao deixamos clicado
